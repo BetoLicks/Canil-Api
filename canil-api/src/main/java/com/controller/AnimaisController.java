@@ -25,8 +25,11 @@ public class AnimaisController {
 
 	@GetMapping("/exclui/{codigo}")
 	public String excluiAnimal(@PathVariable("codigo") String codigo) {
-		return "REGISTRO EXCLUÍDO COM SUCESSO";		
+		return "REGISTRO EXCLUIDO COM SUCESSO";		
 	}
 
-	
+	@GetMapping("/retornaum/{codigo}")
+	public String retornaUm(@PathVariable("codigo") String codigo) {
+		return "REGISTRO ENCONTRADO COM SUCESSO";
+	}	
 }
